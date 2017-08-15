@@ -28,9 +28,11 @@ buildscript {
     classpath 'com.github.ben-manes:gradle-versions-plugin:0.14.0'
     classpath 'org.scoverage:gradle-scoverage:2.1.0'
     classpath 'com.github.jengelman.gradle.plugins:shadow:1.2.4'
+    classpath "org.jfrog.buildinfo:build-info-extractor-gradle:3.1.1"
+
   }
 }
-
+apply plugin: "com.jfrog.artifactory"
 apply from: "$rootDir/gradle/dependencies.gradle"
 
 allprojects {
