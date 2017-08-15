@@ -36,6 +36,7 @@ apply from: "$rootDir/gradle/dependencies.gradle"
 allprojects {
   apply plugin: 'idea'
   apply plugin: "jacoco"
+  apply plugin: 'com.jfrog.artifactory'
 
   repositories {
     mavenCentral()
